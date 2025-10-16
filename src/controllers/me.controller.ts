@@ -1,6 +1,6 @@
 import { createFactory } from "hono/factory";
-import * as profileService from "../services/profile.service";
-import { customLogger } from "../utils/logger";
+import * as profileService from "../services/profile.service.js";
+import { customLogger } from "../utils/logger.js";
 
 const factory = createFactory();
 

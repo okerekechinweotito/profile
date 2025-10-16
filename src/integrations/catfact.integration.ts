@@ -1,4 +1,4 @@
-import { customLogger } from "../utils/logger";
+import { customLogger } from "../utils/logger.js";
 
 export const getCatFact = async () => {
   try {

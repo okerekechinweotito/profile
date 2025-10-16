@@ -1,6 +1,6 @@
-import * as catFactIntegration from "../integrations/catfact.integration";
-import { PROFILE_DATA } from "../models/profile.model";
-import { customLogger } from "../utils/logger";
+import * as catFactIntegration from "../integrations/catfact.integration.js";
+import { PROFILE_DATA } from "../models/profile.model.js";
+import { customLogger } from "../utils/logger.js";
 
 export const handleProfileData = async () => {
   try {

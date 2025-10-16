@@ -1,5 +1,7 @@
 ## Getting Started
 
+This server is built using [Hono](https://hono.dev/)
+
 ### Prerequisites
 
 - Node.js (v20.11.17 or later)

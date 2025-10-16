@@ -1,7 +1,6 @@
 import { serve } from "@hono/node-server";
-import { appendFileSync } from "node:fs";
-import app from "./app";
-import { customLogger } from "./utils/logger";
+import app from "./app.js";
+import { customLogger } from "./utils/logger.js";
 
 const port = 3000;
 const server = serve({ ...app, port }, (info) => {
