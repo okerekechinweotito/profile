@@ -2,9 +2,9 @@ import { serve } from "@hono/node-server";
 import app from "./app.js";
 import { customLogger } from "./utils/logger.js";
 
-const port = 3000;
-const server = serve({ ...app, port }, (info) => {
-  console.log(`Server is running on http://localhost:${info.port}`);
+const port = Number(process.env.PORT) || 3000;
+const server = serve({ fetch: app.fetch, port }, (info) => {
+  console.log(`Server is running on port ${info.port}`);
 });
 
 process.on("SIGINT", () => {
