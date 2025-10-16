@@ -31,6 +31,12 @@ pnpm run dev
 The server will start on `http://localhost:3000` and you can access it in your browser.
 
 
+## API Docs
+
+The API is hosted at [black.up.railway.app](https://black.up.railway.app).
+
+You can prettify the JSON response by adding `?pretty` to the URL. For example, `https://black.up.railway.app/me?pretty`.
+
 ## API Endpoints
 
 ### `GET /`
