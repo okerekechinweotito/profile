@@ -1,6 +1,6 @@
 import { serve } from "@hono/node-server";
-import app from "./app.js";
-import { customLogger } from "./utils/logger.js";
+import app from "./app.ts";
+import { customLogger } from "./utils/logger.ts";
 
 const port = Number(process.env.PORT) || 3000;
 const server = serve({ fetch: app.fetch, port }, (info) => {

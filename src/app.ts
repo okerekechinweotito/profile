@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { prettyJSON } from "hono/pretty-json";
-import meRoutes from "./routes/me.route.js";
+import meRoutes from "./routes/me.route.ts";
 
 const app = new Hono();
 

@@ -1,13 +1,10 @@
-import * as catFactIntegration from "../integrations/catfact.integration.js";
-import { PROFILE_DATA } from "../models/profile.model.js";
-import { customLogger } from "../utils/logger.js";
+import * as catFactIntegration from "../integrations/catfact.integration.ts";
+import { PROFILE_DATA } from "../models/profile.model.ts";
+import { customLogger } from "../utils/logger.ts";
 
 export const handleProfileData = async () => {
   try {
     const catFact = await catFactIntegration.getCatFact();
-    if (catFact === 500) {
-      return 500;
-    }
     return {
       ...PROFILE_DATA,
       fact: catFact,
